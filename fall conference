@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025 Fall Conference Program</title>
+<style>
+  :root {
+    --accent: #0b6efd;
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --maxw: 1000px;
+  }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: #111827;
+  }
+  header {
+    background: var(--accent);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .container {
+    max-width: var(--maxw);
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  input, select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 150px;
+  }
+  button {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+  }
+  .meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .desc {
+    font-size: 0.95rem;
+  }
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>2025 District 8 Fall Conference Program</h1>
+  <p>Use the filters below to find your sessions</p>
+</header>
+
+<div class="container">
+  <div class="filters">
+    <input type="search" id="searchBox" placeholder="Search sessions or speakers...">
+    <select id="timeFilter">
+      <option value="">All Times</option>
+      <option>10:00 AM</option>
+      <option>11:30 AM</option>
+      <option>1:20 PM</option>
+      <option>2:20 PM</option>
+      <!-- Add more times as needed -->
+    </select>
+
+    <select id="roomFilter">
+      <option value="">All Rooms</option>
+      <option>Grand Hall</option>
+      <option>Classroom</option>
+      <option>Meeting Room</option>
+      <option>Small Meeting Room</option>
+      <!-- Add more rooms as needed -->
+    </select>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <div id="sessions" class="grid">
+    <!-- SESSION CARD TEMPLATE -->
+
+<div class="card" data-time="10:00 AM" data-speaker="Lise Olsen" data-room="Grand Hall">
+  <h3>Opening TLA Session and Keynote from Lise Olsen</h3>
+  <div class="meta">10:00 AM • Grand Hall • Lise Olsen</div>
+  <p class="desc">Join investigative reporter and author Lise Olsen for an inside look at how real-world research comes to life. Drawing from her book The Scientist and the Serial Killer, Olsen will share stories from her investigative journey, explore the connections between local history and true crime, and discuss how libraries, archives, and community resources helped her bring hidden stories to light.</p>
+</div>
+
+<div class="card" data-time="11:30 AM" data-speaker="Kimberly Michelle Gay, Prairie View A&M University" data-room="Grand Hall">
+  <h3>Train the Trainers in Cultivating and Planting Library Experiential Learning Engagements: A Library Community Collaborative Approach to Addressing STEM to STEAgM in Agriculture, Foodscaping and Library Partnerships</h3>
+  <div class="meta">11:30 AM • Grand Hall</div>
+  <p class="desc">Discover how a Texas A&M University System Academic Reference and Instruction Agriculture Librarian II collaborated with public, school and community centers to address Experiential Education Learning Engagements on their campus through STEM to STEAgM Foodscaping library research initiatives. This session introduces a “train-the-trainers” model that equips all library types with the skills to help their librarians design curriculum based Experiential Education learning projects. Attendees will learn how cross-disciplinary partnerships linking STEM to STEAgM and Libraries help to foster sustainable library communities.</p>
+</div>
+
+<div class="card" data-time="11:30 AM" data-speaker="Perla Camacho-Cedillo, Brazoria County Library System;
+Tom West, Brazoria County Library System" data-room="Classroom">
+  <h3>Look for the Helpers: Programming Outside Your Comfort Zone	</h3>
+  <div class="meta">11:30 AM • Classroom</div>
+  <p class="desc">In our current time when modern technology dominates people’s lives to distract, overwhelm, and accelerate isolation, libraries and community partners are the bridges that reconnect people with their communities. This interactive workshop will provide library workers the tools to establish partnerships with local organizations and to create programming outside their comfort zone which best serves their communities.</p>
+</div>
+
+<div class="card" data-time="11:30 AM" data-speaker="Jesús N. Serrato, University of Houston-Downtown" data-room="Meeting Room">
+  <h3>Instruction as a Bridge: Connecting Students to Resources</h3>
+  <div class="meta">11:30 AM • Meeting Room</div>
+  <p class="desc">Library instruction isn't just about showing your students how to search: it's about making connections. This presentation looks into how analyzing statistics from instruction sessions and database usage can reveal important trends about how students engage with library resources. This perspective presents instruction as not just a measurable factor but also as a personal link between students, resources, and the wider academic community. The session will focus on practical strategies that libraries can implement to emphasize instruction as a key link within academic communities.</p>
+</div>
+
+<div class="card" data-time="11:30 AM" data-speaker="Toni Simmons, Storyteller and Author" data-room="Small Meeting Room">
+  <h3>Have I Got A Story For You!	</h3>
+  <div class="meta">11:30 AM • Small Meeting Room</div>
+  <p class="desc">Experience the art of storytelling with storyteller Toni Simmons as she brings stories to life.  Discover how storytelling can be used in your libraries for all ages and occasions.  Listen to, join in, and enjoy this interactive program.</p>
+</div>
+
+
+<!--- --->
+
+<div class="card" data-time="1:20 PM" data-speaker="Quentin Pace, University of Texas MD Anderson Cancer Center " data-room="Grand Hall">
+  <h3>Archiving the Children's Art Project at MD Anderson Cancer Center	</h3>
+  <div class="meta">1:20 PM • Grand Hall</div>
+  <p class="desc">This program presents a comprehensive overview of the Children’s Art Project, an initiative established at the University of Texas MD Anderson Cancer Center. It explores the historical significance of the project and the processes by which its artistic output is preserved. The artwork is inventoried, digitized, and archived by the Historical Resources Center (HRC), a specialized unit within the Research Medical Library, ensuring its continued preservation as part of the institution’s cultural legacy.</p>
+</div>
+
+<div class="card" data-time="1:20 PM" data-speaker="Kaitlyn Carpenter, University of St. Thomas" data-room="Classroom">
+  <h3>Past as Prologue: Cultivating Community Through Archival Engagement in the High School Library</h3>
+  <div class="meta">1:20 PM • Classroom</div>
+  <p class="desc">This session showcases how a high school library partnered with a sociology class to use historical yearbooks as archival resources for hands-on research. Students learned archival care, data analysis, and qualitative research while exploring school-based case studies on representation and community change.</p>
+</div>
+
+<div class="card" data-time="1:20 PM" data-speaker="Shekeylia Douglas, Harris County Public Library;
+Martha Gonzales, Children at Risk;
+Danielle Brooks, Harris County Department of Economic Equity and Opportunity" data-room="Meeting Room">
+  <h3>Community Voice: A Needs Assessment Model for Libraries</h3>
+  <div class="meta">1:20 PM • Meeting Room</div>
+  <p class="desc">Harris County Public Library’s participation in the Early Learning Quality Network grant led to the development of a new model for community-driven decision-making. This session describes the process of using individualized grassroots approaches to prioritize and collect community feedback, informing early learning quality initiatives. The outreach and trust-building strategies implemented through this project can be adapted for any library wanting to model community-led planning and community-directed funding.</p>
+</div>
+
+<!---  --->
+
+<div class="card" data-time="2:20 PM" data-speaker="Sarah Anderson, Oldways Nonprofit" data-room="Grand Hall">
+  <h3>From Kitchen to Community: Nourishing Youth and Connecting Communities</h3>
+  <div class="meta">2:20 PM • Grand Hall</div>
+  <p class="desc">From Kitchen to Community introduces A Children’s Taste of African Heritage (ACTOAH), a hands-on food and wellness program developed by Oldways. Through storytelling, food traditions, and simple recipes, ACTOAH engages youth in interactive activities that promote health, pride, and connection. Designed for flexible settings, the program can be adapted for meeting rooms, classrooms, or community spaces, equipping libraries to nourish youth and strengthen community ties.			</p>
+</div>
+
+<div class="card" data-time="2:20 PM" data-speaker="Louise Kidder, University of Houston" data-room="Classroom">
+  <h3>Collaborative Cleanup of a Collections Budget</h3>
+  <div class="meta">2:20 PM • Classroom</div>
+  <p class="desc">In 2024, University of Houston Libraries Acquisitions & Resource Sharing Department embarked on a cleanup project aimed at solving the problem of inaccurate fund encumbrances that have made useful budget projections difficult. This was complicated by long-standing workflow ambiguities and a shared tenant ILS environment. The project relies on collaboration among staff members and has impacts across multiple departments. The program describes steps taken and impacts of the ongoing project through September 2025, as well as future work.</p>
+</div>
+
+<div class="card" data-time="2:20 PM" data-speaker="Kaitlyn Carpenter, University of St. Thomas; 
+Virginia Osborne, Texas City ISD & San Jacinto College; 
+LaTrisha Milton, Houston Public Library; 
+Monica Babaian, Fort Bend ISD; 
+Rachael Welsh, Pearland ISD; 
+Kimberly Michelle Gay, Prairie View A&M University;
+Meredith Derrick, Klein ISD" data-room="Meeting Room">
+  <h3>Your Seat at the Table: Becoming a TLA Leader (Panel)</h3>
+  <div class="meta">2:20 PM • Meeting Room</div>
+  <p class="desc">Join officers from various TLA round tables and divisions as they share their unique paths to leadership, insights gained through service, and the impact of professional involvement. This panel offers practical advice, personal stories, and inspiration for those looking to grow within TLA and give back to the library community.</p>
+</div>
+
+
+
+
+
+
+    <!-- Duplicate or replace the above "card" blocks with your own session data -->
+  </div>
+</div>
+
+<script>
+const searchBox = document.getElementById('searchBox');
+const timeFilter = document.getElementById('timeFilter');
+const speakerFilter = document.getElementById('speakerFilter');
+const roomFilter = document.getElementById('roomFilter');
+const resetBtn = document.getElementById('resetBtn');
+const sessions = document.querySelectorAll('.card');
+
+function filterSessions() {
+  const q = searchBox.value.toLowerCase();
+  const t = timeFilter.value;
+  const s = speakerFilter.value;
+  const r = roomFilter.value;
+
+  sessions.forEach(card => {
+    const matchSearch = card.textContent.toLowerCase().includes(q);
+    const matchTime = !t || card.dataset.time === t;
+    const matchSpeaker = !s || card.dataset.speaker === s;
+    const matchRoom = !r || card.dataset.room === r;
+    card.style.display = (matchSearch && matchTime && matchSpeaker && matchRoom) ? "" : "none";
+  });
+}
+
+[searchBox, timeFilter, speakerFilter, roomFilter].forEach(el => el.addEventListener('input', filterSessions));
+resetBtn.addEventListener('click', () => {
+  searchBox.value = "";
+  timeFilter.value = "";
+  speakerFilter.value = "";
+  roomFilter.value = "";
+  filterSessions();
+});
+</script>
+</body>
+</html>
